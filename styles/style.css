@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* estilos de main */
+
+.introducing-myself {
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/30/20/58/progrmming-1873854_1280.png);
+    text-align: center;
+    padding: 220px 0px;
+    color: white;
+    min-height: 50vh
+
+}
+h1{
+    font-size:39px;
+    font-weight: 32px;
+    color: white;
+    
+}
+
+
+.cont-projects{
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(255,255,255);
+
+}
+h2{
+    font-size: 60px;
+    font-weight: 50px;
+}
+.cont-projects-cards{       
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+   
+}
+
+
+.c1, .c2, .c3, .c4, .c5, .c6 {
+    width: 350px; 
+    min-height: 50vh;
+    background-color: #f0ebe3;
+    border-radius: 10px;
+    box-shadow: 3px 5px 33px 5px rgba(0,0,0,0.75);
+    /* margin: 10px auto;   */
+    padding: 20px 10px;
+    /* min-height: 350px; */
+
+}
+
+    
+.cont-img {
+    width: 250px;
+    background-color: #b29ecf;
+    margin: auto;
+    padding: auto;
+    min-height: 120px;
+  
+}    
+
+img{
+    width: 90%;
+    margin: 10px 10px 5px 10px;
+    padding: 10px 10px;
+    
+    
+}
+h3{
+    margin: 20px 0px;
+    font-size: 27.3px;
+    font-weight: 500px;
+
+
+}
+p{
+    color:#212529;
+    font-size: 15.5px;
+    margin: 20px 0;
+    font-weight: 400px;
+}
+
+.cont-button button{
+    background-color: transparent;
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+    color:black ;
+    font-size: 15.5px;
+    font-weight: 400px;
+}
+.cont-button button:hover{
+    cursor: pointer;
+}
+.contact-data{
+    background-color:#f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items:center ;
+}
+
+    
+.contact-data h2 {
+    font-size: 80px;
+    padding: 20px 10px;
+    width: 350px;
+        
+}
+
+form{
+    width: 350px;
+    
+}
+.label{
+    padding: 10px;
+}
+
+input{
+    width: 100%;
+    min-height: 50px;
+
+}
+
+#mesage{
+    width: 100%;
+    min-height: 130px;
+    
+}
+
+.button-form button{
+    background-color: #000;
+    color: #fff;
+    padding: 5px 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+  
+}
+.button-form button:hover{
+    cursor: pointer;
+}
+ 
+@media (max-width:880px){
+ .cont-projects-cards{
+    grid-template-columns: repeat(2, 1fr); }
+ }
+
+ @media (max-width:480px) {
+    .cont-projects-cards{
+        grid-template-columns: 1fr;
+    }
+ }
